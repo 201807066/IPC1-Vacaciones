@@ -1,0 +1,10 @@
+digraph G
+{
+node[shape=record];
+graph[pencolor=transparent];
+rankdir=LR;
+node [fontname="Arial"];
+edge[tailclip=false,arrowtail=dot,dir=both];
+node_1 [label="{{<back>}|{id: 1| Nombre: asd| Color: Amarillo | Tipo: Público}|{<next>}}"];
+node_1:next:c -> node_1:back:c;
+}

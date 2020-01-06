@@ -1,0 +1,9 @@
+digraph G
+{
+node[shape=record];
+graph[pencolor=transparent];
+rankdir=LR;
+node [fontname="Arial"];
+edge[tailclip=false,arrowtail=dot,dir=both];
+node_Sthephan [label="{{<back>}|{NickName: Sthephan| Nombre: Sthephan Alexander Garcia Marroquin| Rol: ejecutivo| Telefono: 55555555}|{<next>}}"];
+}
