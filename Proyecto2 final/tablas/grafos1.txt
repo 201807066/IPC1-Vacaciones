@@ -1,0 +1,39 @@
+digraph G
+{
+node[shape=record];
+graph[pencolor=transparent];
+rankdir=LR;
+node [fontname="Arial"];
+edge[tailclip=false,arrowtail=dot,dir=both];
+node_Alex [label="{{<back>}|{NickName: Alex| Nombre: Kevin Alexander Lorenzo Lopez| Rol: auxiliar| Telefono: 55555559}|{<next>}}"];
+node_Axel [label="{{<back>}|{NickName: Axel| Nombre: Axel Josué Esquivel Cuy| Rol: secretario| Telefono: 55555553}|{<next>}}"];
+node_Bryan [label="{{<back>}|{NickName: Bryan| Nombre: Bryan Steve Choc Cuteres| Rol: secretario| Telefono: 55555556}|{<next>}}"];
+node_Cris [label="{{<back>}|{NickName: Cris| Nombre: Bryan Cristhopher Ignacio Xoy| Rol: gerente| Telefono: 55555558}|{<next>}}"];
+node_Emanuel [label="{{<back>}|{NickName: Emanuel| Nombre: Emanuel Alexandro Rafael Peña Monterroso| Rol: coordinador| Telefono: 55555550}|{<next>}}"];
+node_Henry [label="{{<back>}|{NickName: Henry| Nombre: Henry Geovani Jolon Subuyuc| Rol: presidente| Telefono: 55555551}|{<next>}}"];
+node_Kevin [label="{{<back>}|{NickName: Kevin| Nombre: Kevin Estuardo Secaida Molina| Rol: coordinador| Telefono: 55555557}|{<next>}}"];
+node_Myriam [label="{{<back>}|{NickName: Myriam| Nombre: Myriam Priscila Velásquez Cumes| Rol: tesorero| Telefono: 55555552}|{<next>}}"];
+node_Nickname [label="{{<back>}|{NickName: Nickname| Nombre: Nombre| Rol: Rol| Telefono: Telefono}|{<next>}}"];
+node_Sthephan [label="{{<back>}|{NickName: Sthephan| Nombre: Sthephan Alexander Garcia Marroquin| Rol: ejecutivo| Telefono: 55555555}|{<next>}}"];
+node_Walther [label="{{<back>}|{NickName: Walther| Nombre: Walther Andree Corado Paiz| Rol: vicepresidente| Telefono: 55555554}|{<next>}}"];
+node_Alex:next:c -> node_Axel:back:c;
+node_Axel:back:c -> node_Alex:next:c;
+node_Axel:next:c -> node_Bryan:back:c;
+node_Bryan:back:c -> node_Axel:next:c;
+node_Bryan:next:c -> node_Cris:back:c;
+node_Cris:back:c -> node_Bryan:next:c;
+node_Cris:next:c -> node_Emanuel:back:c;
+node_Emanuel:back:c -> node_Cris:next:c;
+node_Emanuel:next:c -> node_Henry:back:c;
+node_Henry:back:c -> node_Emanuel:next:c;
+node_Henry:next:c -> node_Kevin:back:c;
+node_Kevin:back:c -> node_Henry:next:c;
+node_Kevin:next:c -> node_Myriam:back:c;
+node_Myriam:back:c -> node_Kevin:next:c;
+node_Myriam:next:c -> node_Nickname:back:c;
+node_Nickname:back:c -> node_Myriam:next:c;
+node_Nickname:next:c -> node_Sthephan:back:c;
+node_Sthephan:back:c -> node_Nickname:next:c;
+node_Sthephan:next:c -> node_Walther:back:c;
+node_Walther:back:c -> node_Sthephan:next:c;
+}
